@@ -1,14 +1,6 @@
-@import "utils";
-@import "base";
-
-body{
-height: 100vh;
-}
-
-main{
-    height: 100%;
-}
-
-a{
-text-decoration: none;
-}
+@forward './base/typography';
+@forward './abstracts/colors';
+@forward './base/base';
+@forward './abstracts/mixin';
+@forward './layout/footer';
+@forward './layout/header'

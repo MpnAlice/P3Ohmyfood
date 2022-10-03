@@ -1,0 +1,15 @@
+.footer{
+    background-color: black;
+    margin-top: 0 auto;
+    &__title {
+        color: white;
+    }
+    .footer__link >*{
+        color: white;
+    }
+    .footer__title{
+        font-family: 'Shrikhand', cursive;
+    }
+}
+
+ 
