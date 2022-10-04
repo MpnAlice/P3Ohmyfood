@@ -4,29 +4,22 @@ footer{
  color: white;
  padding: 3%;
     .footer__links{
-        line-height: 10px;
-        &__item >*{
-        color:white 
-        }
-            .footer__links__item{
-                position: relative;
-                    &__icon{
-                        position:absolute;
-                    }
-                    &__text{
-                        position: relative;
-                        margin-left: 25px;
-
-                    }
+       line-height: 10px;
+            &__item>*{
+                 color: white;
+       }
+                &__item__icon{
+                position: absolute;
         
-            }
+       }
+                &__item__text{
+                position: relative;
+                margin-left: 25px;
+        }
+     
+    }
 
-
-    } 
-    
 }
+   
 
-    
 
-
- 
