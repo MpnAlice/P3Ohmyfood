@@ -1,15 +1,24 @@
+
 .footer{
-    background-color: black;
-    margin-top: 0 auto;
+    background-color: rgba(22, 21, 21, 0.788);
+    padding:2%;
     &__title {
         color: white;
-    }
-    .footer__link >*{
-        color: white;
-    }
-    .footer__title{
         font-family: 'Shrikhand', cursive;
     }
+    &__link >*{
+        color: white;
+    }
+    &__link-text{
+       position: relative;
+       margin-left: 25px;
+    }
+    &__link-icon{
+        position: absolute;
+    }
+    
 }
+    
+
 
  
