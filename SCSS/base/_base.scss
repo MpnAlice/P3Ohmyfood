@@ -9,17 +9,31 @@ html{
     box-sizing:inherit;
 }
 
+::placeholder{
+    font-weight: bold;
+    color: black;
+   
+}
+
 body{
     margin: 0 ;
     padding: 0;
     height: 100vh;
 }
 
+main{
+    $primary-color:#9356DC ;
+    $body-color:lighten($primary-color,38%);
+    background-color: $body-color;
+}
+
+
+p,
+h4{
+    margin-top: 0;
+}
+
 a{
     text-decoration: none;
   
-}
-main{
-    height: 100vh;
-    margin: 0 auto;
 }
