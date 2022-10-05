@@ -1,8 +1,8 @@
-@forward './base/typography';
 @forward './abstracts/colors';
+@forward './vendors/normalize';
+@forward './base/typography';
 @forward './base/base';
-@forward './abstracts/mixin';
-@forward './layout/footer';
 @forward './layout/header' ;
-@forward './layout/mainsection';
-@forward './abstracts/colors'
+@forward './layout/hero';
+@forward "./layout/location";
+@forward './layout/footer';
