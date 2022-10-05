@@ -1,7 +1,9 @@
 .hero{
+   $body-color:#F2F2F2;
+   $home-page-btn-color:lighten($body-color,0%);
+   background-color: $home-page-btn-color;
     text-align: center;
     padding: 10px;
-    border: 2px solid;
     /*mettre boutons et mixin pour tous les boutons*/
     &__btn button{
       $primary-color:#9356DC ;
