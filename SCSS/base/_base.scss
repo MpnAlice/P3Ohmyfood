@@ -21,15 +21,10 @@ body{
     height: 100vh;
 }
 
-main{
-    $primary-color:#9356DC ;
-    $body-color:lighten($primary-color,38%);
-    background-color: $body-color;
-}
-
 
 p,
-h4{
+h4,
+h2{
     margin-top: 0;
 }
 
