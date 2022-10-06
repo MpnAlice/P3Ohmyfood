@@ -3,7 +3,7 @@
    $home-page-btn-color:lighten($body-color,0%);
    background-color: $home-page-btn-color;
     text-align: center;
-    padding: 10px;
+    padding: 40px;
     /*mettre boutons et mixin pour tous les boutons*/
     &__btn button{
       $primary-color:#9356DC ;
@@ -20,5 +20,6 @@
       font-weight: bold;
       cursor: pointer;
       letter-spacing: 1px;
+      padding-bottom: 20px;
      }
 }
