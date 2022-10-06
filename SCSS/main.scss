@@ -2,7 +2,10 @@
 @forward './vendors/normalize';
 @forward './base/typography';
 @forward './base/base';
+@forward "./components/buttons";
 @forward './layout/header' ;
 @forward './layout/hero';
 @forward "./layout/location";
+@forward "./layout/process";
+@forward './layout/restaurants';
 @forward './layout/footer';
