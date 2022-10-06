@@ -4,12 +4,11 @@
   align-items: center;
   justify-content: center;
 }
-/*FIND MIXIN */
 .location{
   $body-color:#F2F2F2;
-  $home-page-btn-color:darken($body-color,10%);
+  $home-page-btn-color:darken($body-color,5%);
   background-color:$home-page-btn-color;
-  border: 2px solid $home-page-btn-color;
+  border-top: 2px solid darken($color:$body-color, $amount:20%);
   border-left: transparent;
   border-right: transparent;
   width: 100%;
@@ -17,22 +16,23 @@
  position:relative;
  overflow:hidden;
  @extend %flexcenter;
-
   &__bar{
     height: 60px;
       &__icon{
         height:100%;
-        width: 50px;
         position: absolute;
         z-index: 1;
         padding: 20px 10px 10px 5px;
         @extend %flexcenter;
+        $body-color:#F2F2F2;
+       $home-page-btn-color:darken($body-color,5%);
+       background-color:$home-page-btn-color;
+       
+
+        
       
       }
       &__input{
-       $body-color:#F2F2F2;
-       $home-page-btn-color:darken($body-color,10%);
-       background-color:$home-page-btn-color;
         height:100%;
         width: 100%;
         display:block;
@@ -40,7 +40,11 @@
         outline: none;
         border: none;
         @extend %flexcenter;
-        background-color:$body-color;
+        $body-color:#F2F2F2;
+       $home-page-btn-color:darken($body-color,5%);
+       background-color:$home-page-btn-color;
+       
+        
       }
   }
 
