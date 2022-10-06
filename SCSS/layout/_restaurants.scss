@@ -1,0 +1,17 @@
+.restaurant{
+    border: 2px solid blue;
+    min-width:100%;
+    height: auto;
+    &__title{
+        
+    }
+    &__cards{
+        border: 2px solid yellow;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+            &__card{
+                background-color: aquamarine;
+            }
+    }
+}
