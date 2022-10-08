@@ -14,11 +14,10 @@
         &__card{
             display: flex;
             flex-direction:column;
-            border: 2px solid blue;
             border-radius: 35px;
             margin-top: -35px;
             position: relative;
-            background-color: #FF79DA;
+            background-color: lighten($color:grey, $amount: 49%);
             width: 100%;
         
     
@@ -39,8 +38,7 @@
                     }
                 }
                 &__items{
-                   
-                    margin-bottom: 20px;
+                  border: 2px solid green;
                     p{
                         margin-bottom:0;
                     }
@@ -55,7 +53,7 @@
                     }
                     &__bloc{
                        
-                        margin-top: 20px;
+                       margin: 0 auto;
                         display: flex;
                         flex-direction: column;
                         gap: 10px;
