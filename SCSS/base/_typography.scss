@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap');
+$title-font:'Shrikhand', cursive;
+$body-font: 'Roboto', sans-serif;
+
+.footer__title{
+    font-family: $title-font; /*to footer*/
+}
+body{
+    font-family:$body-font;
+}
+.menu__card-header--name{
+    font-family: $title-font;
+}

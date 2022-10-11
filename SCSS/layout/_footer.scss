@@ -1,0 +1,25 @@
+
+footer{
+ background-color: rgba(22, 21, 21, 0.788);
+ color: white;
+ padding: 3%;
+    .footer__links{
+       line-height: 10px;
+            &__item>*{
+                 color: white;
+       }
+                &__item__icon{
+                position: absolute;
+        
+       }
+                &__item__text{
+                position: relative;
+                margin-left: 25px;
+        }
+     
+    }
+
+}
+   
+
+

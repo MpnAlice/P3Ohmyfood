@@ -1,0 +1,54 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  
+}
+
+/***************************/
+*,
+*::before,
+*::after{
+    box-sizing:inherit;
+}
+
+::placeholder{
+    font-weight: bold;
+    color: black;
+   
+}
+body,
+header,
+main,
+footer{
+   min-width: 100%;
+   margin: 0 auto;
+   padding: 0;
+   margin: 0;
+  
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;/*FIX THE footer to the bottom*/
+   
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p,
+h1,
+h4,
+h2{
+    margin-top: 0;
+}
+
+a{
+    text-decoration: none;
+}
