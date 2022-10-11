@@ -3,11 +3,11 @@ $title-font:'Shrikhand', cursive;
 $body-font: 'Roboto', sans-serif;
 
 .footer__title{
-    font-family: $title-font /*to footer*/
+    font-family: $title-font; /*to footer*/
 }
 body{
-    font-family:$body-font
+    font-family:$body-font;
 }
 .menu__card-header--name{
-    font-family: $title-font
+    font-family: $title-font;
 }
