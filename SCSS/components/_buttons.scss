@@ -1,0 +1,17 @@
+.menu__btn > *{
+ $primary-color:#9356DC ;
+ $secondary-color:#FF79DA ;
+ height: 40px;
+ border-radius: 49px; /*mixin*/
+ padding: 10px;
+ background-image:linear-gradient(to bottom right ,$secondary-color,$primary-color);
+ color: white;
+ border: none;
+ outline: none;
+ width: 200px;
+ font-weight: bold;
+ box-shadow: 0px 5px 10px -4px darken(grey,20%) ;
+ cursor: pointer;
+ 
+     
+}
