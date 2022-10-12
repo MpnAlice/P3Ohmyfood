@@ -1,0 +1,45 @@
+.loading-spinner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    z-index:2;
+    transition:opacity 0.75s, visibility 0.75s;
+    transition-duration: 3s;
+
+    &::after{
+        $secondary-color:#FF79DA ;
+        $tertiary-color:#99E2D0;
+        $primary-color:#9356DC ;
+        content: "";
+        width: 100px;
+        height: 100px;
+        border: 15px solid $secondary-color;
+        border-top-color: $tertiary-color;
+        border-left-color: $primary-color;
+        border-radius: 50%;
+        animation: loading 1s linear infinite;
+        animation-fill-mode: forwards;
+       
+        @keyframes loading{
+           from{ transform: rotate(0turn);}
+
+           to {transform: rotate(1turn);}
+        }
+      
+    }
+}
+
+.loading-spinner--hidden{
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 2s;
+ 
+ }
+ 
+ 
