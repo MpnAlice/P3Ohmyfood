@@ -1,45 +1,44 @@
 .loading-spinner{
+    display: grid;
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color:white;
-    z-index:2;
-    transition:opacity 0.75s, visibility 0.75s;
-    transition-duration: 3s;
+    z-index: 2;
+    opacity:0.85;
+    animation: fadeout 300ms 3s forwards;
+    transform-origin: top;
+
 
     &::after{
+        $primary-color:#9356DC ;
         $secondary-color:#FF79DA ;
         $tertiary-color:#99E2D0;
-        $primary-color:#9356DC ;
         content: "";
         width: 100px;
         height: 100px;
         border: 15px solid $secondary-color;
-        border-top-color: $tertiary-color;
-        border-left-color: $primary-color;
+        border-left-color:$primary-color;
+        border-right-color:$tertiary-color;
         border-radius: 50%;
-        animation: loading 1s linear infinite;
-        animation-fill-mode: forwards;
-       
-        @keyframes loading{
-           from{ transform: rotate(0turn);}
-
-           to {transform: rotate(1turn);}
-        }
-      
+        animation: spinning 1s ease-in-out infinite;
+        animation-iteration-count: 3;
     }
 }
 
-.loading-spinner--hidden{
-    opacity: 0;
-    visibility: hidden;
-    transition-duration: 2s;
- 
+
+
+@keyframes fadeout {
+    from{ transform: scale(1);}
+    to{transform: scale(0);}
+    
+}
+@keyframes spinning {
+    from{rotate: (0turn);}
+    to{ rotate:(1turn)}
  }
- 
  
