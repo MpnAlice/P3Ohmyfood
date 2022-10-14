@@ -21,23 +21,26 @@
                 border-radius: 16px;
                 overflow: hidden;
                 position: relative;
-    
 
                 &__link{    
                     height: 100%;
                     width: 100%;
                     border-radius: 16px;
                     position: relative;
+
                         &--status{
+                         $tertiary-color:#99E2D0;
                            color: green;
-                           background-color:lightgreen;
-                           padding: 5px;
+                           background-color:$tertiary-color;
+                           padding: 10px;
                            text-align: center;
                            position: absolute;
                            display:block;
-                           margin-block: 20px;
-                           margin-inline: 80%;
-
+                           border-radius: 5px;
+                           top: 1%;
+                           right: 2%;
+                           transform:translate(-50%,50%);
+                           /*mieux centrer les éléments*/
                         }
                         &--image{
                             width: 100%;
