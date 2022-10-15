@@ -5,6 +5,10 @@
     height: 100%;
     margin-top: 30px;
     background-color:$body-color ;
+    padding: 20px;
+    &__title{
+        padding-top: 40px;
+    }
 
     &__cards{
         width: 100%;
@@ -13,7 +17,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 10px;
+        margin-bottom: 20px;
             &__card{
                 height: 250px;
                 min-width: 100%;
