@@ -15,3 +15,28 @@
  margin-right: -60px;
  
 }
+
+//the "new" tag can be added to other content when needed;
+.new-badge{
+border:2px solid ;
+position:relative;
+
+&::before{
+    $tertiary-color:#99E2D0;
+    content:"Nouveau";
+    width: 100px;
+    height: 40px;
+    background-color:$tertiary-color;
+    color: darken($tertiary-color,40%);
+    position:absolute;
+    z-index: 1;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   top:1rem;
+   right: 1rem;
+   font-weight: bold;
+}
+
+
+}

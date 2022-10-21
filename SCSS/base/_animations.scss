@@ -1,7 +1,7 @@
 
 .menu__card-main1{
  animation-duration: 2s;
- transition-duration:0.2s;
+ transition:1 ease-in-out;
  animation-name: glissement;
  transform-origin:center;
 }
@@ -23,8 +23,8 @@
 
 
 .menu__card-main2{
-    animation-duration: 3s;
-    transition-duration: 0.2s;
+    animation-duration: 2s;
+    transition: 2s ease-in-out;
     animation-name: glissement2;
     transform-origin: center;  
 } 
@@ -35,7 +35,7 @@
     }
   
     80%{
-     opacity: 0,5;
+     opacity: 0;
     }
 
     100%{
@@ -44,8 +44,8 @@
  }
 
 .menu__card-main3{
-    animation-duration: 4s;
-    transition-duration: 0.2S;
+    animation-duration: 3s;
+    transition:3s ease-in-out;
     animation-name: glissement3;
     transform-origin: center;
    }
@@ -53,11 +53,11 @@
    @keyframes glissement3 {
        0% {
         opacity: 0;
-         transform: translateY(100%);
+         transform: translateY(200%);
        }
      
        80%{
-        opacity: 0,5;
+        opacity: 0;
        }
    
        100%{

@@ -1,10 +1,15 @@
-
 .process{
-    background-color: white;
     margin-top: 20px;
     width: 100%;
     height: 100%;
     padding: 20px;
+    border:2px solid;
+    @media (min-width:768px) {
+        width:50%;
+        height:100%;
+       margin: 0;
+        
+      }
     &__steps{
         padding: 2px;
         min-width: 100%;
@@ -12,10 +17,17 @@
         flex-direction: column;
         align-items: center;
         gap: 30px;
+        @media (min-width:768px) {
+           gap:10px;
+            
+          }
+        
             &__step{
+                $primary-home-color:#F2F2F2;
                 padding:20px;
                 height: 60px;
                 width: 100%;
+                background-color:lighten($primary-home-color,2%);
                 border-radius: 14px; /*mixin*/
                 display:inline-block;
                 display: flex;
@@ -25,14 +37,18 @@
                 justify-content: space-around;
                 cursor: pointer;
                 position: relative;
-                $body-color:#F2F2F2;
-                $home-page-btn-color:darken($body-color,10%);
-                background-color:$body-color;
-                box-shadow: 5px 4px 16px -4px grey;
+                box-shadow: 5px 4px 16px -4px darken($primary-home-color,20%);
+                @media (min-width:768px) {
+                   height:30px;
+                   width:80%;
+                     
+                   }
+
                 &:hover{
+                    $primary-home-color:#F2F2F2;
                     $primary-color:#9356DC;
-                    background-color: lighten($color:$primary-color, $amount: 35%);
-                    box-shadow: 5px 5px 16px -4px darken(grey,30%) ;
+                    background-color: lighten($primary-color,35%);
+                    box-shadow: 5px 5px 16px -4px darken($primary-home-color,30%) ;
                     .process__steps__step__icon{
                         color: $primary-color;
                     }

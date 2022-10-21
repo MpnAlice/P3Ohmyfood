@@ -9,62 +9,61 @@
     <title>OHMYFOOD-Accueil</title>
 </head>
 <body>
+ <!--loading-spinner-->
  <div class="loading-spinner"></div>
   <header>
         <div class="header">
             <div class="header__logo"><img src="assets/images/logo/ohmyfood@2x.svg" alt="logo oh my food"></div>
         </div>
  </header>
-
  <!---->
-
  <main>
-        <div class="location">
-            <form action="search" class="location__bar">
-                <label for="location's search"><i class="location__bar__icon fa-solid fa-location-dot"></i></label>
-                <input class="location__bar__input" type="search" name="" id="location's search" placeholder="Paris,Belleville">
+     <!--location-search-bar-->
+        <div class="location-bar">
+            <form action="search">
+                <label for="location's search"><i class= "fa-solid fa-location-dot"></i></label>
+                <input type="search" name="" id="location's search" placeholder="Paris,Belleville">
             </form>
         </div>
        <!--hero-->
+       <div class="hero-process-container">
+            <section class="hero">
+                <div class="hero__text">
+                    <h1>Réservez le menu qui <br> vous convient</h1>
+                    <p>Découvrez des restaurants d'exception,<br>sélectionnés par nos soins</p> 
+                </div>
+                <div class="hero__btn">
+                    <button>Explorez nos restaurants</button>
+                </div>
+            </section>
+            <!--ordering-process--> 
+            
+         <section class="process">
+            <div class="process__title"><h2>Fonctionnement</h2></div>
+        
+            <div class="process__steps">
 
-     <section class="hero">
-         <div class="hero__text">
-             <h1>Réservez le menu qui <br> vous convient</h1>
-             <p>Découvrez des restaurants d'exception,<br>sélectionnés par nos soins</p> 
-         </div>
-         <div class="hero__btn">
-             <button>Explorez nos restaurants</button>
-         </div>
-     </section>
+            <div class="process__steps__step">
+                <span class="process__steps__step__number">1</span>
+                <span class="process__steps__step__icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                <div class="process__steps__step__name">Choisissez votre restaurant</div>
+            </div>
 
-        <!--ordering-process-->
+            <div class="process__steps__step">
+                <span class="process__steps__step__number">2</span>
+                <span class="process__steps__step__icon"><i class="fa-solid fa-list-ul"></i></span>
+                <div class="process__steps__step__name">Composez votre menu</div>
+            </div>
 
-     <section class="process">
-         <div class="process__title"><h2>Fonctionnement</h2></div>
-         <!--add divs with numbers-->
-         <div class="process__steps">
+            <div class="process__steps__step">
+                <span class="process__steps__step__number">3</span>
+                <span class="process__steps__step__icon"><i class="fa-solid fa-store"></i></span>
+                <div class="process__steps__step__name">Dégustez au restaurant</div>
+            </div>
+            </div>
+            </section>
+       </div>
 
-             <div class="process__steps__step">
-                 <span class="process__steps__step__number">1</span>
-                 <span class="process__steps__step__icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
-                 <div class="process__steps__step__name">Choisissez votre restaurant</div>
-             </div>
-
-             <div class="process__steps__step">
-                 <span class="process__steps__step__number">2</span>
-                 <span class="process__steps__step__icon"><i class="fa-solid fa-list-ul"></i></span>
-                 <div class="process__steps__step__name">Composez votre menu</div>
-             </div>
-
-             <div class="process__steps__step">
-                 <span class="process__steps__step__number">3</span>
-                 <span class="process__steps__step__icon"><i class="fa-solid fa-store"></i></span>
-                 <div class="process__steps__step__name">Dégustez au restaurant</div>
-             </div>
-         </div>
-     </section>
-
-    
         <!--restaurants and menu-->
 
         <section class="restaurant">

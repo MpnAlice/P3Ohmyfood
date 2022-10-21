@@ -1,7 +1,9 @@
-$primary-color:#9356DC ;
+/*main colors*/
+$primary-home-color:#F2F2F2;
+$secondary-home-color:white;
+$tertiary-home-color:rgba(22, 21, 21, 0.788);
+/*elements-colors*/
+$primary-color:#9356DC;
 $secondary-color:#FF79DA ;
 $tertiary-color:#99E2D0;
-$white-color:white;
-$body-color:#F2F2F2;
-$home-page-btn-color:darken($body-color,0%);
-$process-btn-hover:lighten($primary-color,10%);
+

@@ -1,26 +1,29 @@
 .menu{
+    $primary-home-color:#F2F2F2;
+    background-color:lighten($primary-home-color,2%);
     width: 100%;
-    margin-bottom: 20px;
+    border: 2px solid transparent;
     text-align: center;
         &__image{
            height: 300px;
            position:relative;
-           z-index: -1;
+           z-index: 1;
         }
         &__card{
-             text-align: left;
-             border-radius: 50px 50px 0 0;
-            background-color: lighten($color:grey, $amount: 60%);/**correct the background**/
+            $primary-home-color:#F2F2F2;
+            text-align: left;
+            border-radius: 50px 50px 0 0;
+            background-color: lighten($primary-home-color,2%);
             min-width: 100%;
             max-width: 100%;
             margin-top:-40px;
             padding: 20px;
+            position: relative;
+            z-index: 2;
 
             &-header{
                 display: flex;
                 align-items: center;
-                border:2px solid;
-                width: 100%;
                 height: 50px;
                 padding:2%;
                 justify-content: space-between;
@@ -48,16 +51,17 @@
                  position:relative;
                  gap: 30px;
                  margin-bottom: 30px;
-                 width: 100%;
-                 border: 2px solid;
+                 width:440px;
+                 max-width: 100%;
             }
                    
             &-main1--title{
+                $tertiary-color:#99E2D0;
                 text-transform: uppercase;
-                width: 50px;
-                border-bottom: 2px solid  mediumaquamarine;/*add to variables*/
-                padding-bottom: 4px;
-                margin-bottom: 10px;
+                width: 40px;
+                border-bottom: 3px solid $tertiary-color;
+                padding-bottom: 2px;
+                margin-bottom: 20px;
             }
 
             &-main1--items {
@@ -73,8 +77,7 @@
                       position: relative;
                       display:flex;
                       align-items:center;
-                      width:440px;
-                      max-width: 100%;
+                      width: 100%;
                       height: 60px;
                       border-radius: 16px;
                       overflow: hidden;
@@ -157,8 +160,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin:0 auto
-
+        margin:40px auto;
+       
     }
 
            

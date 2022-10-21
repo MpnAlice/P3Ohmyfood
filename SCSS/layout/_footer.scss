@@ -1,12 +1,14 @@
-
 footer{
- background-color: rgba(22, 21, 21, 0.788);
- color: white;
+ $secondary-home-color:white;
+ $tertiary-home-color:rgba(22, 21, 21, 0.788);
+ background-color:$tertiary-home-color;
+ color:$secondary-home-color;
  padding: 3%;
     .footer__links{
        line-height: 10px;
             &__item>*{
-                 color: white;
+                $secondary-home-color:white;
+                 color:$secondary-home-color;
        }
                 &__item__icon{
                 position: absolute;
