@@ -1,0 +1,33 @@
+//theme colors
+$primary-clr:#9356DC;
+$secondary-clr:#FF79DA;
+$tertiary-clr: #99E2D0;
+$neutral-grey: #DDDEDE;
+$neutral-dark-grey:#C1C2C2;
+$neutral-white:#FDFEFE;
+$neutral-black:#200E12;
+
+//color palette
+$colors:(
+    "primary":$primary-clr,
+    "secondary":$secondary-clr,
+    "tertiary":$tertiary-clr,
+    "neutral-light":$neutral-white,
+    "neutral-dark":$neutral-black,
+    "neutral-medium":$neutral-grey,
+    "neutral-medium-dark":$neutral-dark-grey
+);
+
+//spacing
+$base-margin:20px;
+$base-padding:10px;
+
+//borders
+$base-border-radius:16px;
+
+//box-shadow
+$base-shadow-out: -2px 1px 25px -2px $neutral-dark-grey;
+$base-shadow-in: 0px 2px 2px 0px  $neutral-dark-grey inset;
+
+//font-sizes
+    
