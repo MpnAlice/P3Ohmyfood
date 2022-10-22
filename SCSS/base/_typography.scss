@@ -1,13 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap');
 $title-font:'Shrikhand', cursive;
 $body-font: 'Roboto', sans-serif;
+//general typography maybe check the line-height of p's
+p,
+h1,
+h2{
+ margin-top: 0;
+}
+h2{
+ font-weight: bold;
+}
 
-.footer__title{
-    font-family: $title-font; 
-}
-body{
-    font-family:$body-font;
-}
-.menu__card-header--name{
+//title's p style
+.menu__card-header--name p,
+.footer__title p{
     font-family: $title-font;
+}
+
+
+//input's style
+
+::-webkit-input-placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+::-moz-placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+:-ms-input-placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+::-ms-input-placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+::placeholder{
+    font-weight: bold;
+    color: black;
+    word-spacing: 5px;
+}
+
+
+::-webkit-input-placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+::-moz-placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+:-ms-input-placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+::-ms-input-placeholder{
+    font-weight: bold;
+    color: black;
+}
+//link's style
+a,
+a:visited,
+a:active{
+    text-decoration: none;
 }
