@@ -1,0 +1,30 @@
+@use "../base/typography";
+@use "../abstracts/variables";
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+//
+*,
+*::before,
+*::after{
+    box-sizing:inherit;
+}
+//
+body{
+ font-family: typography.$body-font;
+ margin: 0;
+ padding: 0;
+ background-color:variables.$neutral-white;
+}
+//
+img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+
+
+
