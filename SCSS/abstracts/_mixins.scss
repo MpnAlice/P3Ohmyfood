@@ -1,0 +1,73 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/colors" as c;
+
+//GENERAL MIXINS
+@mixin flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin block-center{
+    display: inline-block;
+    text-align: center;
+}
+@mixin gradient {
+    background-image: linear-gradient( map-get(c.$colors, primary),map-get(c.$colors, secondary))
+}
+
+@mixin text-style{
+    font-weight: bold;
+    color:map-get(c.$colors, footer-elements)
+}
+
+
+//LAYOUT MIXINS
+@mixin header-logo {
+    @include flexcenter;
+    &__logo{
+        padding: v.$l-padding 0 v.$l-padding 0 ;
+    }
+}
+
+@mixin footer{
+    background-color: map-get(c.$colors,footer-backgrnd);
+    color:map-get(c.$colors,footer-elements);
+    padding: v.$s-padding;
+    
+    .footer__links{
+        &__item>*{
+            color:map-get(c.$colors,footer-elements); 
+            line-height: v.$m-lineheight; 
+        }
+        &__item__icon{
+            position: absolute;
+        }
+        &__item__text{
+            position:relative;
+            margin-left: v.$l-margin;
+        }
+        
+    }
+}
+
+@mixin hero{
+    text-align: center;
+    background-color:lighten(map-get(c.$colors, neutral-medium ), $amount:10%) ;
+    padding: v.$xl-padding;
+}
+
+
+//ELEMENT MIXINS
+@mixin element-style{
+    @include text-style;
+    @include block-center;
+    @include gradient;
+       padding:v.$l-padding;
+       outline: none;
+       border: none;
+       border-radius: v.$xl-border-radius;
+       cursor: pointer;
+       box-shadow: v.$shadow-out;
+    //ADD HOVER
+}
+
