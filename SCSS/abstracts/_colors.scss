@@ -1,14 +1,14 @@
-@use"../abstracts/variables";
+@use"../abstracts/variables" as v;
 
 //rename's colors
 $colors:(
-    "primary":variables.$primary-clr,
-    "secondary":variables.$secondary-clr,
-    "tertiary":variables.$tertiary-clr,
-    "text-elements":variables.$neutral-white,
-    "footer-backgrnd":variables.$neutral-black,
-    "home-medium":variables.$neutral-grey,
-    "home-medium-dark":variables.$neutral-dark-grey
+    "primary":v.$primary-clr,
+    "secondary":v.$secondary-clr,
+    "tertiary":v.$tertiary-clr,
+    "text-elements":v.$neutral-white,
+    "footer-backgrnd":v.$neutral-black,
+    "home-medium":v.$neutral-grey,
+    "home-medium-dark":v.$neutral-dark-grey
 );
 
 

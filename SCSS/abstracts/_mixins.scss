@@ -17,7 +17,14 @@
 
 @mixin text-style{
     font-weight: bold;
-    color:map-get(c.$colors, footer-elements)
+    color:map-get(c.$colors, text-elements)
+}
+
+@mixin absolute-element {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    outline: none;
 }
 
 
@@ -31,12 +38,12 @@
 
 @mixin footer{
     background-color: map-get(c.$colors,footer-backgrnd);
-    color:map-get(c.$colors,footer-elements);
+    color:map-get(c.$colors,text-elements);
     padding: v.$s-padding;
     
     .footer__links{
         &__item>*{
-            color:map-get(c.$colors,footer-elements); 
+            color:map-get(c.$colors,text-elements); 
             line-height: v.$m-lineheight; 
         }
         &__item__icon{
@@ -52,7 +59,7 @@
 
 @mixin hero{
     text-align: center;
-    background-color:lighten(map-get(c.$colors, neutral-medium ), $amount:10%) ;
+    background-color:lighten(map-get(c.$colors, home-medium ), $amount:10%) ;
     padding: v.$xl-padding;
 }
 
@@ -70,4 +77,30 @@
        box-shadow: v.$shadow-out;
     //ADD HOVER
 }
+@mixin location{
+    height: 70px;
+    min-width: 100%;
+    position: relative;
+    //MIXIN input and button
+    position: relative;
+        input{
+            width: 100%;
+            height:70px;
+            @include block-center;
+            outline: none;
+            border: none;
+            background-color: map-get(c.$colors, home-medium );
+            box-shadow: v.$shadow-in;
+        }
+        label{
+            display: block;
+            position: absolute;
+            @include flexcenter;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding-right: 150px;
+            
+        }
+    }
 
