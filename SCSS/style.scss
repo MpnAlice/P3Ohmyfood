@@ -1,18 +1,6 @@
-@forward './abstracts/colors';
-@forward './vendors/normalize';
-@forward './base/typography';
-@forward './base/animations';
-@forward './base/base';
-@forward './base/heart';
-@forward './components/icons';
-@forward "./components/buttons";
-@forward './layout/header' ;
-@forward './layout/hero';
-@forward './layout/containers';
-@forward './layout/spinner';
-@forward "./layout/location";
-@forward "./layout/process";
-@forward './layout/restaurants';
-@forward './layout/footer';
-@forward './pages/menu';
-
+//forwarded partials
+@forward "base";
+@forward "abstracts";
+@forward "layout";
+@forward "components";
+@forward "pages";

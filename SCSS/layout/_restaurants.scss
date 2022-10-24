@@ -1,17 +1,10 @@
 .restaurant{
-    $primary-home-color:#F2F2F2;
     min-width:100%;
     height: 100%;
-    background-color:lighten($primary-home-color,2%);
     margin-top: 30px;
     padding: 20px;
-    @media(min-width:768px){
-        width: 50%;
-        background-color: yellow;
-        display: flex;
-        flex-direction: column;
-    }
-    &__title{
+    
+    &__title {
         padding-top: 40px;
     }
 
@@ -19,49 +12,24 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 20px;
         margin-bottom: 20px;
-        @media(min-width:768px){
-            flex-direction: row;
-        }
+        position: relative;
+       
             &__card{
-                $primary-home-color:#F2F2F2;
-                $secondary-home-color:white;
-                background-color:$secondary-home-color;
                 height: auto;
                 width:100%;
                 border-radius: 16px;
                 overflow: hidden;
-                position: relative;
                //add box-shadow
-
-               
-        
                 &__link{    
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 16px;
-                    position: relative;
                     
-
-                        &--status{
-                          width:110px;
-                          padding: 10px;
-                           left:75%;
-                           top:10%;
-                           $tertiary-color:#99E2D0;
-                           font-weight: bold;
-                           color: darken($tertiary-color,40%);
-                           background-color:$tertiary-color;
-                           text-align: center;
-                           position: absolute;
-                           display:inline-block;
-                           border-radius: 2px;
-                           /*mieux centrer les éléments*/
-                        }
                         &--image{
-                            width: 100%;
-                            height: 250px;
+                            width: auto;
+                            height:200px;
+                            max-width: 100%;
+                            position: relative;
                         }
                         &--body{
                             width: 100%;
@@ -106,6 +74,7 @@
                                     color:transparent;
                                     position:absolute;
                                     display:none;
+                                    transform-origin: center;
                                     
                 
                                     &::after{
@@ -118,8 +87,21 @@
                                         top:50%;
                                         border-radius: 35%;
                                         position:absolute;
-                                        animation:spin 1s  linear ;
-                                        animation-fill-mode: forwards; 
+                                        -webkit-animation:spin 1s  linear ;
+                                                animation:spin 1s  linear ;
+                                        -webkit-animation-fill-mode: forwards;
+                                                animation-fill-mode: forwards; 
+                                      
+                            
+                                        @-webkit-keyframes spin {
+                                            0%{
+                                                transform: translateY(-50%) rotate(0deg);
+                                            }
+                                            100%{
+                                                transform:translateY(-160%) rotate(560deg);
+                                            }
+                                        } 
+                                      
                             
                                         @keyframes spin {
                                             0%{
@@ -143,4 +125,4 @@
                 }
             }
     }
-}
+ }
