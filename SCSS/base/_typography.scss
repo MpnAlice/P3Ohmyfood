@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap');
-$title-font:'Shrikhand', cursive;
+
 $body-font: 'Roboto', sans-serif;
+$title-font:'Shrikhand', cursive;
+
+$fonts:(
+    "body":$body-font,
+    "titles":$title-font,
+);
+
 //general typography maybe check the line-height of p's
 p,
 h1,
 h2{
  margin-top: 0;
 }
+
 h2{
  font-weight: bold;
 }
@@ -14,7 +22,7 @@ h2{
 //title's p style
 .menu__card-header--name p,
 .footer__title p{
-    font-family: $title-font;
+    font-family: map-get($fonts, titles)
 }
 
 

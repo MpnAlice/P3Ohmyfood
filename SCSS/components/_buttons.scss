@@ -1,3 +1,4 @@
+
 .menu__btn > *{
  $primary-color:#9356DC ;
  $secondary-color:#FF79DA ;
@@ -13,8 +14,8 @@
  box-shadow: 0px 5px 10px -4px darken(grey,20%) ;
  cursor: pointer;
  margin-right: -60px;
- 
 }
+
 
 //the "new" tag can be added to other content when needed;
 .new-badge{
@@ -36,6 +37,7 @@ position:relative;
    top:1rem;
    right: 1rem;
    font-weight: bold;
+
 }
 
 
