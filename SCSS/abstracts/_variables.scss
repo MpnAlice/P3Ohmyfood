@@ -7,27 +7,36 @@ $neutral-dark-grey:#C1C2C2;
 $neutral-white:#FDFEFE;
 $neutral-black:#200E12;
 
-//color palette
-$colors:(
-    "primary":$primary-clr,
-    "secondary":$secondary-clr,
-    "tertiary":$tertiary-clr,
-    "neutral-light":$neutral-white,
-    "neutral-dark":$neutral-black,
-    "neutral-medium":$neutral-grey,
-    "neutral-medium-dark":$neutral-dark-grey
-);
-
 //spacing
 $base-margin:20px;
 $base-padding:10px;
 
+//padding
+$s-padding:3px;
+$m-padding:10px;
+$l-padding:20px;
+$xl-padding:40px;
+
+//margin
+$s-margin:15px;
+$m-margin:25px;
+$l-margin:30px;
+
+
+//line-heights
+$s-lineheight:5px;
+$m-lineheight:10px;
+
 //borders
-$base-border-radius:16px;
+$s-border-radius:16px;
+$xl-border-radius:40px;
+//positions
+
 
 //box-shadow
-$base-shadow-out: -2px 1px 25px -2px $neutral-dark-grey;
-$base-shadow-in: 0px 2px 2px 0px  $neutral-dark-grey inset;
+$shadow-out: -2px 1px 25px -2px $neutral-dark-grey;
+$shadow-in: 0px 2px 2px 0px  $neutral-dark-grey inset;
+$hover-shadow:darken($neutral-dark-grey, 5%);
 
 //font-sizes
     
