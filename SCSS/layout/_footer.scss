@@ -1,26 +1,6 @@
+@use"../abstracts/mixins" as m;//changing the name spacing
 footer{
- $secondary-home-color:white;
- $tertiary-home-color:rgba(22, 21, 21, 0.788);
- background-color:$tertiary-home-color;
- color:$secondary-home-color;
- padding: 3%;
-    .footer__links{
-       line-height: 10px;
-            &__item>*{
-                $secondary-home-color:white;
-                 color:$secondary-home-color;
-       }
-                &__item__icon{
-                position: absolute;
-        
-       }
-                &__item__text{
-                position: relative;
-                margin-left: 25px;
-        }
-     
-    }
-
+    @include m.footer;
 }
    
 

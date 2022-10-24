@@ -1,9 +1,5 @@
+@use"../abstracts/mixins"as m;//changing the name spacing
 
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &__logo {
-       padding-top: 20px;
-    }
+   @include m.header-logo;
 }

@@ -1,36 +1,9 @@
+@use "../abstracts/mixins" as m;
 .hero{
-  $primary-home-color:#F2F2F2;
-  background-color:lighten($primary-home-color,2%);
-    text-align: center;
-    padding: 40px;
-    @media (min-width:768px) {
-      width:50%;
-      height:50%;
-      padding:0;
-      
+ @include m.hero;
+  &__btn{
+    button{
+      @include m.element-style;
     }
-    &__btn button{
-      $primary-home-color:#F2F2F2;
-      $primary-color:#9356DC ;
-      $secondary-color:#FF79DA ;
-       height: 60px;
-       @media (min-width:768px) {
-        height: 100%;
-        padding-bottom:15px;
-
-       }
-       border-radius: 49px; /*mixin*/
-       padding: 20px;
-       display:inline-block;
-       text-align: center;
-       color: white;
-      background-image:linear-gradient(to bottom right ,$secondary-color,$primary-color);
-      outline: none;
-      border: none; /*mixin for buttons*/
-      font-weight: bold;
-      cursor: pointer;
-      letter-spacing: 1px;
-      padding-bottom: 20px;
-      box-shadow: 0px 5px 10px -4px darken( $primary-home-color,25%) ;
-     }
+  }
 }

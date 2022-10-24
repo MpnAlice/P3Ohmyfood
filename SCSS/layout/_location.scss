@@ -1,9 +1,4 @@
-%flexcenter{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
+@use"../abstracts/mixins";
 .location-bar{
  $primary-home-color:#F2F2F2;
  border: none;
@@ -12,7 +7,7 @@
  
   form{
     border:none;
-    @extend %flexcenter;
+    @include mixins.flexcenter;
     position: relative;
     height: 50px;
     &>*{
@@ -24,7 +19,7 @@
     }
     label{
       z-index: 1;
-      @extend %flexcenter;
+      @include mixins.flexcenter;
       right: 75px;
     }
 
