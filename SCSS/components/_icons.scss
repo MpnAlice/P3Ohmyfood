@@ -1,7 +1,45 @@
-.header__preview--btn >*{
-  display: inline-block;
- margin-left: -70px;
- margin-top: 15px;
- font-size: 20px;
- color: black;
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+@use "../abstracts/colors" as c;
+
+//header preview button
+.header__preview--btn {
+  .fa-solid{
+    margin-left: -80px;
+    font-size:v.$m-font-size;
+    color:v.$neutral-black;
+  }
+}
+//process button icons
+.process__steps__step__icon{
+  text-align: center;
+  width: 100px;
+  .fa-solid{
+    @include m.small-icon-grey;
+  }             
+}
+//process button numbers
+.process__steps__step__number{
+ @include m.numbers;
+}
+
+//heart
+.restaurant__cards__card__link--body--heart{
+  .fa-solid{
+   @include m.heart;
+  }
+  .fa-regular{
+    position:absolute;
+    z-index: 1;
+    opacity:1;
+  }   
+}
+
+
+//footer's icon
+.footer__links__item{
+  .fa-solid{
+    @include m.small-icon-white;
+  }
+
 }
