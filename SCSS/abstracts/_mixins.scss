@@ -2,17 +2,18 @@
 @use "../abstracts/colors" as c;
 
 //GENERAL MIXINS
-
+//width
 @mixin basic-width{
     width: 100%;
     min-width: 100%;
 }
+//height
 @mixin basic-height{
     height: 100%;
     min-height: 100%;
 }
 
-
+//flex
 @mixin flexcenter{
     display: flex;
     flex-direction: row;
@@ -25,32 +26,41 @@
     align-items: center;
     justify-content:space-around;
 }
+@mixin flexbetween{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
 @mixin columncenter{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
 }
-// 
+
+// block
 @mixin block-center{
     display: inline-block;
     text-align: center;
 }
-//
+
+//gradient
 @mixin gradient {
     background-image: linear-gradient( map-get(c.$colors, primary),map-get(c.$colors, secondary))
 }
-//
+
+//text
 @mixin text-style{
     font-weight: bold;
     color:map-get(c.$colors, text-elements)
 }
+
 //
-@mixin absolute-element{
-    position: absolute;
-    width: 100%;
-    height:100%;
-    outline: none;
+@mixin btn-cursor{
+    outline:none;
+    border:none;
+    cursor: pointer;
 }
 
 @mixin absolute-click{
@@ -61,6 +71,9 @@
 //
 
 //LAYOUT MIXINS
+
+
+//header
 @mixin header-logo {
     @include flexcenter;
     &__logo{
@@ -68,6 +81,7 @@
     }
 }
 
+//footer
 @mixin footer{
     background-color: map-get(c.$colors,footer-backgrnd);
     color:map-get(c.$colors,text-elements);
@@ -89,6 +103,7 @@
     }
 }
 
+//process
 @mixin process{
     @include basic-width;
     margin-top: v.$l-margin;
@@ -138,16 +153,34 @@
     
   
 }
+//restaurant
+@mixin restaurant{
+    @include basic-width;
+    @include basic-height;
+    margin-top: v.$l-margin;
+    padding:v.$l-padding;
+    &__title {
+        padding-top:v.$xl-padding;
+    }
+    &__cards{
+        @include basic-width;
+        @include columncenter; 
+        gap:v.$m-gap;
+        margin-bottom: 20px;
+        position: relative;
+    }
+}
 
 
 //ELEMENT MIXINS
-
+//hero
 @mixin hero{
      text-align: center;
      background-color:lighten(map-get(c.$colors, home-medium ), $amount:10%) ;
      padding: v.$xl-padding;
 }
 
+//hero-btn
 @mixin element-style{
     @include text-style;
     @include block-center;
@@ -160,7 +193,8 @@
        box-shadow: v.$shadow-out;
     //ADD HOVER
 }
-//
+
+//location bar
 @mixin location{
     height: 70px;
     min-width: 100%;
@@ -187,7 +221,7 @@
             
         }
     }
-    
+    //step btn
     @mixin step{
         @include basic-width;
         padding:v.$l-padding;
