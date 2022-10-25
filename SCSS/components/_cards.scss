@@ -1,0 +1,6 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+.restaurant__cards__card{
+  @include m.card; }
+
+    
