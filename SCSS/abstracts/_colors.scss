@@ -1,6 +1,6 @@
 @use"../abstracts/variables" as v;
 
-//rename's colors
+//color-palette
 $colors:(
     "primary":v.$primary-clr,
     "secondary":v.$secondary-clr,
@@ -10,5 +10,9 @@ $colors:(
     "home-medium":v.$neutral-grey,
     "home-medium-dark":v.$neutral-dark-grey
 );
-
+//gradients for animations and buttons
+$gradients:(
+ "btn-gradient": linear-gradient( map-get($colors, primary),map-get($colors, secondary)),
+  "heart": linear-gradient(to top, map-get($colors, primary),map-get($colors, secondary)),
+);
 
