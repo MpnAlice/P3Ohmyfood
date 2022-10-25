@@ -1,10 +1,27 @@
-
+//MENU ANIMATION
 .menu__card-main1{
- animation-duration: 2s;
+ -webkit-animation-duration: 2s;
+         animation-duration: 2s;
  transition:1 ease-in-out;
- animation-name: glissement;
+ -webkit-animation-name: glissement;
+         animation-name: glissement;
  transform-origin:center;
 }
+
+@-webkit-keyframes glissement {
+    0% {
+     opacity: 0;
+      transform: translateY(100%);
+    }
+  
+    80%{
+     opacity: 0,5;
+    }
+
+    100%{
+        opacity:1;
+    }
+ }
 
 @keyframes glissement {
     0% {
@@ -23,11 +40,27 @@
 
 
 .menu__card-main2{
-    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     transition: 2s ease-in-out;
-    animation-name: glissement2;
+    -webkit-animation-name: glissement2;
+            animation-name: glissement2;
     transform-origin: center;  
 } 
+@-webkit-keyframes glissement2 {
+    0% {
+     opacity: 0;
+      transform: translateY(100%);
+    }
+  
+    80%{
+     opacity: 0;
+    }
+
+    100%{
+        opacity:1;
+    }
+ } 
 @keyframes glissement2 {
     0% {
      opacity: 0;
@@ -44,11 +77,28 @@
  }
 
 .menu__card-main3{
-    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
     transition:3s ease-in-out;
-    animation-name: glissement3;
+    -webkit-animation-name: glissement3;
+            animation-name: glissement3;
     transform-origin: center;
    }
+   
+   @-webkit-keyframes glissement3 {
+       0% {
+        opacity: 0;
+         transform: translateY(200%);
+       }
+     
+       80%{
+        opacity: 0;
+       }
+   
+       100%{
+           opacity:1;
+       }
+    }
    
    @keyframes glissement3 {
        0% {
@@ -65,3 +115,45 @@
        }
     }
 
+//HEART ANIMATIONS
+.restaurant__cards__card__link--body--heart{
+    .fa-solid{
+        &::after{
+            content:"";
+            width:100%;
+            height:100%;
+            background-color:white;
+            right:1%;
+            top:50%;
+            border-radius: 35%;
+            position:absolute;
+
+            -webkit-animation:spin 1s  linear ;
+                    animation:spin 1s  linear ;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards; 
+          
+
+            @-webkit-keyframes spin {
+                0%{
+                    transform: translateY(-50%) rotate(0deg);
+                }
+                100%{
+                    transform:translateY(-160%) rotate(560deg);
+                }
+            } 
+          
+
+            @keyframes spin {
+                0%{
+                    transform: translateY(-50%) rotate(0deg);
+                }
+                100%{
+                    transform:translateY(-160%) rotate(560deg);
+                }
+            }
+        }
+    }
+
+
+}
