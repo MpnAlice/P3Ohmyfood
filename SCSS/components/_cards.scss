@@ -1,6 +1,213 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
+@use "../abstracts/colors" as c;
 .restaurant__cards__card{
-  @include m.card; }
-
+  background-color:map-get(c.$backgrounds, home-card-bckgrnd);
+  height: auto;
+  @include m.basic-width;
+  border-radius:v.$s-border-radius;
+  overflow: hidden;
+  box-shadow: v.$shadow-out;
+  margin-bottom: 20px;
+  @include m.tablet{
+    width: 300px;
+    max-width: 100%;
+    margin:5px;
+    @include m.entertablet
+    }
     
+    @include m.desktop{ 
+        width: 450px;
+        max-width: 100%;
+        
+    }  
+
+  &__link{  
+    height: auto;
+    width:100%;
+    border-radius:v.$s-border-radius;
+    overflow: hidden;
+       
+    @include m.desktop{ 
+        width: 450px;
+        max-width: 100%;
+        
+    }  
+    @include m.tablet{
+        min-width:100%;
+    }
+        
+    
+    &--image{
+        width: auto;
+        height:200px;
+        max-width: 100%;
+        position: relative;
+    }
+    @include m.tablet{
+        min-width:100%;
+        }
+        
+       
+    @include m.desktop{ 
+        width: 450px;
+        max-width: 100%;
+        
+    }  
+
+    &--body{
+        width: 100%;
+        height: 80px;
+        @include m.flexbetween;
+        padding:v.$l-padding;
+        line-height:v.$s-lineheight;
+    }
+
+    &--text{
+        margin-bottom:v.$xs-margin;
+    }
+    
+}
+
+}
+
+   
+
+
+
+.new-badge{
+  position:relative;
+  &::before{
+     content:"Nouveau";
+     $tertiary-color:#99E2D0;
+     width: 100px;
+     height: 40px;
+     background-color:$tertiary-color;
+     color: darken($tertiary-color,40%);
+     position:absolute;
+     z-index: 1;
+    @include m.flexcenter;
+    top:1rem;
+    right: 1rem;
+    font-weight: bold;}
+  }
+
+  
+.menu__card{
+  text-align: left;
+  border-radius: 50px 50px 0 0;
+  background-color: lighten(v.$neutral-grey, 10%);
+  margin-top: -45px;
+  @include m.basic-width;
+  padding: 10px;
+  @include m.tablet{
+
+    border: 2px solid;
+    width: 80%;
+    border-radius:0;
+    margin:0 auto;
+    margin-top: -70px;
+    padding:20px;
+  }
+
+  &-header{
+    display: block;
+    width: 85%;
+    height: 60px;
+    margin: 30px auto;
+    @include m.flexcenter;
+    gap: 10px;
+    &--name{
+         font-size:25px;
+         padding-right: 10px;
+
+    }  
+   
+}
+&-main1,
+&-main2,
+&-main3{
+ position: relative;
+    margin-bottom: 30px;
+    width: auto;
+    height: auto;
+    @include m.tablet{
+
+        
+    }
+
+   
+    &--title{
+            text-transform: uppercase;
+            width:v.$l-width;
+            border-bottom:3px solid v.$tertiary-clr;
+            margin-bottom: v.$m-margin;
+            @include m.tablet{
+                height:50%;
+                width: 60%;
+                display: flex;
+                margin-right: 50px;
+                
+            }
+        }
+        &--items{
+            @include m.columncenter;
+            @include m.basic-width;
+            gap:15px;
+            padding: 10px;
+            &--dish{
+
+                @include m.tablet{
+                   height: 60px;
+                   gap: 2px;
+                    
+                }
+            
+                background-color:v.$neutral-white;
+                cursor: pointer;
+                position:relative;
+                @include m.flexbetween;
+                @include m.basic-width;
+                height:v.$l-height;
+                border-radius: v.$s-border-radius;
+                overflow: hidden;
+                box-shadow: v.$shadow-out;
+                &:hover{
+                     & >.menu__card-main1--items--dish--name{
+                        width: 290px;
+                     }
+                     & >.menu__card-main1--items--dish--price{
+                        width: 110px;
+                     }
+                     & >.menu__card-main1--items--dish--add{
+                        width: 80px;
+                        transform: translate(9%);
+                        &>.fa-regular{
+                            transform: rotate(1turn);
+                         }
+                     }
+                    
+                }
+                &--name{
+                    width: 390px;
+                    text-overflow: ellipsis;
+                    white-space:nowrap;
+                    display: inline-block;
+                    overflow: hidden;
+                    margin: 10px 2px 10px 10px;
+                }
+                &--price{
+                    width: 10px;
+                    margin-bottom: -30px;
+                    padding: 20px;
+                }
+            }
+            
+           
+
+        }
+}
+
+}
+
+  

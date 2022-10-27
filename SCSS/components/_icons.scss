@@ -26,7 +26,14 @@
 //heart
 .restaurant__cards__card__link--body--heart{
   .fa-solid{
-   @include m.heart;
+      background-image:map-get(c.$gradients, heart);
+        background-clip: text;
+        -webkit-background-clip:text;
+        color:transparent;
+        position:absolute;
+        display:none;
+        transform-origin: center;
+
   }
   .fa-regular{
     position:absolute;
@@ -34,6 +41,25 @@
     opacity:1;
   }   
 }
+.menu__card-header--heart{
+  .fa-solid{
+      background-image:map-get(c.$gradients, heart);
+        background-clip: text;
+        -webkit-background-clip:text;
+        color:transparent;
+        position:absolute;
+        display:none;
+        transform-origin: center;
+
+    }
+   }
+   .fa-regular{
+     position:absolute;
+     z-index: 1;
+     opacity:1;
+   }   
+
+
 
 
 //footer's icon

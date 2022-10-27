@@ -1,0 +1,46 @@
+@use "../abstracts/variables"as v;
+@use "../abstracts/mixins"as m;
+
+//HOME HEART
+.restaurant__cards__card__link--body--heart{
+    width:v.$l-width;
+    font-size:v.$l-font-size;
+    position:relative;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+   
+    @include m.flexcenter;
+    &:hover>.fa-regular{
+       opacity:0;
+       transition:0.1s;
+    }
+    &:hover>.fa-solid{
+        display:inline-block;
+    }
+
+}
+//MENU HEART
+.menu__card-header--heart{
+    width:v.$l-width;
+    font-size:v.$l-font-size;
+    position:relative;
+    height: 50px;
+    width: 50px;
+    font-size: 23px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    outline:none;
+    @include m.flexcenter;
+    &:hover>.fa-regular{
+       opacity:0;
+       transition:0.1s;
+    }
+    &:hover>.fa-solid{
+        display:inline-block;
+    }
+
+}
+
+
