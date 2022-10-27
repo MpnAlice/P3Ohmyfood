@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&family=Shrikhand&display=swap');
 $body-font: 'Roboto', sans-serif;
 $title-font:'Shrikhand', cursive;
-
 $fonts:(
     "body":$body-font,
     "titles":$title-font,
@@ -24,7 +22,20 @@ h2{
 .footer__title p{
     font-family: map-get($fonts, titles)
 }
-
+.footer__title{
+    font-size: 19px;
+}
+.hero__text{
+    h1{
+       font-weight:900;
+       font-size: 2em;
+    }
+    p{
+        font-weight: 300;
+        font-size: 1em;
+        margin-top: -14px;
+    }
+}
 
 //input's style
 
@@ -50,8 +61,6 @@ h2{
 
 ::placeholder{
     font-weight: bold;
-    color: black;
-    word-spacing: 5px;
 }
 
 
@@ -79,4 +88,5 @@ a,
 a:visited,
 a:active{
     text-decoration: none;
+    color: black;
 }
