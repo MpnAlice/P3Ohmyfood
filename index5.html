@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/627f6d85ad.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/assets/images/logo/ohmyfood@2x.svg ">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>MENU-le délice des sens</title>
+    <title>MENU-Le délice des sens</title>
 </head>
 <body>
     <header>
@@ -17,15 +18,15 @@
     </header>
     <!---->
 
-    <main>
+    <main class="menu__container container5">
+        <!--menu-image--> 
+     <div class="menu__image image5"></div>
+     <!--menu-card-->
      <article class="menu">
-         <!--menu-image-->
-         <div class="menu__image"><img src="assets/images/restaurants/Le_délice_des_sens.jpg" alt=""></div><!--heartspan-->
-          <!--menu-card-->
          <div class="menu__card">
              <div class="menu__card-header">
                  <div class="menu__card-header--name"><p>Le délice des sens</p></div>
-                 <div class="restaurant__cards__card__link--body--heart">
+                 <div class="menu__card-header--heart">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-solid fa-heart"></i>
                  </div>
@@ -115,14 +116,15 @@
              </div>
          </div>
      </article>
-     <div class="menu__btn">
-         <button>Commander</button>
+     <div class="order__btn">
+         <input type='button' class='order__btn' value="Commander">
      </div>
     </main>
 
     <!---->
     <footer>
-        <div class="footer__title"><p>ohmyfood</p></div>
+        <div class="footer__container">
+            <div class="footer__title"><p>ohmyfood</p></div>
 
      <div class="footer__links">
           <div class="footer__links__item">
@@ -149,6 +151,8 @@
               <a href="mailto:contact@ohmyfood.com"><p class="footer__links__item__text--no-icon">Contact</p></a></p>
          </div> 
      </div>
+        </div>
+        
     </footer>
 </body>
 </html>

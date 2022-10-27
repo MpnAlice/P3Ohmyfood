@@ -1,0 +1,107 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+.container1{
+    @include m.tablet{
+        display: flex;
+        flex-basis: 100%;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.hero-process-container{
+    @include m.tablet{
+       display: flex;
+       flex-basis: 100%;
+       flex-flow: row wrap;
+       align-items: center;
+    }
+    @include m.desktop{
+        display: flex;
+        flex-basis: 100%;
+        flex-flow: columnwrap;
+        align-items: center;
+        justify-content: center;
+     }
+}
+
+.footer__container{
+    @include m.tablet{
+       flex-basis: 100%;
+        gap: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+   gap: 50px;
+   padding: 25px;
+  
+}
+.menu__container{
+    @include m.tablet
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        
+    }
+   
+    background-color:lighten(v.$neutral-grey, 10%);
+}
+.container2{
+    @include m.tablet
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image:url(map-get(v.$images-menu, 1));
+        background-size: cover;
+      
+        
+    }
+   
+    
+}
+.container3{
+    @include m.tablet
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image:url(map-get(v.$images-menu, 2));
+        background-size: cover;
+      
+        
+    }
+      
+    
+}
+.container4{
+    @include m.tablet
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image:url(map-get(v.$images-menu, 3));
+        background-size: cover;
+      
+        
+    }
+   
+}
+.container5{
+    @include m.tablet
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image:url(map-get(v.$images-menu, 4));
+        background-size: cover;
+      
+        
+    }
+   
+}
+
