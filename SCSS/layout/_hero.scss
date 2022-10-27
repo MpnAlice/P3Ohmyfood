@@ -3,7 +3,7 @@
  @include m.hero;
   &__btn{
     button{
-      @include m.element-style;
+      @include m.cta-btn;
     }
   }
 }

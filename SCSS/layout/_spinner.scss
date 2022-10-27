@@ -1,44 +1,4 @@
+@use "../abstracts/mixins" as m;
 .loading-spinner{
-    display: grid;
-    position: fixed;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:white;
-    z-index: 2;
-    opacity:0.85;
-    animation: fadeout 300ms 3s forwards;
-    transform-origin: top;
-
-
-    &::after{
-        $primary-color:#9356DC ;
-        $secondary-color:#FF79DA ;
-        $tertiary-color:#99E2D0;
-        content: "";
-        width: 100px;
-        height: 100px;
-        border: 15px solid $secondary-color;
-        border-left-color:$primary-color;
-        border-right-color:$tertiary-color;
-        border-radius: 50%;
-        animation: spinning 1s ease-in-out infinite;
-        animation-iteration-count: 3;
-    }
+  @include m.spinner;
 }
-
-
-
-@keyframes fadeout {
-    from{ transform: scale(1);}
-    to{transform: scale(0);}
-    
-}
-@keyframes spinning {
-    from{rotate: (0turn);}
-    to{ rotate:(1turn)}
- }
- 
