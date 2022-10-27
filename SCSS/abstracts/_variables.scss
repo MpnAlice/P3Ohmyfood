@@ -1,3 +1,20 @@
+//images path
+
+$images-menu:(
+    3:"/assets/images/restaurants/A_la_française.jpg",
+    2:"/assets/images/restaurants/La_note_enchantée.jpg",
+    1:"/assets/images/restaurants/La_palette_du_goût.jpg",
+    4:"/assets/images/restaurants/Le_délice_des_sens.jpg",
+);
+
+//breakpoints map
+$breakpoints:(
+    "xs":320px,
+    "sm":767px,
+    "md":768px,
+    "lg":900px,
+);
+     
 //theme colors
 $primary-clr:#9356DC;
 $secondary-clr:#FF79DA;
@@ -5,7 +22,7 @@ $tertiary-clr: #99E2D0;
 $neutral-grey: #DDDEDE;
 $neutral-dark-grey:#C1C2C2;
 $neutral-white:#FDFEFE;
-$neutral-black:#200E12;
+$neutral-black:#363636;
 //spacing
 $base-margin:20px;
 $base-padding:10px;
@@ -19,7 +36,7 @@ $xl-padding:40px;
 //margin
 $xs-margin:10px;
 $s-margin:15px;
-$m-margin:25px;
+$m-margin:20px;
 $l-margin:30px;
 
 //line-heights
@@ -55,7 +72,6 @@ $l-font-size:30px;
 //box-shadow
 $shadow-out: -0px 3px 10px -2px $neutral-dark-grey;
 $shadow-in: 0px 2px 2px 0px  $neutral-dark-grey inset;
-$hover-shadow:darken($neutral-dark-grey, 5%);
-
+$hover-shadow:0px 10px 13px -7px darken($neutral-dark-grey, 20%);
 //font-sizes
     

@@ -12,7 +12,14 @@ $colors:(
 );
 //gradients for animations and buttons
 $gradients:(
- "btn-gradient": linear-gradient( map-get($colors, primary),map-get($colors, secondary)),
+ "btn-gradient":linear-gradient(0deg,v.$primary-clr,v.$secondary-clr),
   "heart": linear-gradient(to top, map-get($colors, primary),map-get($colors, secondary)),
 );
 
+$backgrounds:(
+  "light-body-bckgrnd":lighten(map-get($colors, home-medium ), 10%),
+  "bar-backgnrd":lighten(map-get($colors, home-medium ), 7%),
+  "home-card-bckgrnd":v.$neutral-white,
+
+);
+  
