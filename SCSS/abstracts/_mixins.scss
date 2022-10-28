@@ -389,6 +389,7 @@
 
 //ANIMATIONS
 
+//LOADING ANIMATION
 @mixin spinner{
     @include flexcenter;
     display: grid;
@@ -448,107 +449,16 @@
     }
 }
 
-@mixin slide-in{
-    -webkit-animation: slide-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in 1s 0.30s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
-    @-webkit-keyframes slide-in {
-        0% {
-          transform: scale(0);
-          transform-origin: 50% 100%;
-          opacity: 1;
-        }
-        100% {
-          transform: scale(1);
-          transform-origin: 50% 100%;
-          opacity: 1;
-        }
-      }
-      @keyframes slide-in {
-        0% {
-          transform: scale(0);
-          transform-origin: 50% 100%;
-          opacity: 1;
-        }
-        100% {
-          transform: scale(1);
-          transform-origin: 50% 100%;
-          opacity: 1;
-        }
-      }
-}
-
 //
-@mixin slide-in2{
-    -webkit-animation: slide-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in 1s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    
-    @-webkit-keyframes slide-in {
-        0% {
-          transform: scale(0);
-          transform-origin: 50% 100%;
-          opacity: 1;
-        }
-        100% {
-          transform: scale(1);
-          transform-origin: 50% 100%;
-          opacity: 1;
-        }
-      }
-      @keyframes slide-in{
-        0% {
-          transform: scale(0);
-          transform-origin: 50% 100%;
-          opacity: 1;
-        }
-        100% {
-          transform: scale(1);
-          transform-origin: 50% 100%;
-          opacity: 1;
-        }
-      }
-    
-}
 
-@mixin slide-in3{
-    -webkit-animation: slide-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in 1s 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    
-    @-webkit-keyframes slide-in {
-        0% {
-          transform: scale(0);
-          transform-origin: 50% 100%;
-          opacity: 1;
-        }
-        100% {
-          transform: scale(1);
-          transform-origin: 50% 100%;
-          opacity: 1;
-        }
-    }
-    @keyframes slide-in {
-        0% {
-          transform: scale(0);
-          transform-origin: 50% 100%;
-          opacity: 1;
-        }
-        100% {
-          transform: scale(1);
-          transform-origin: 50% 100%;
-          opacity: 1;
-        }
-    } 
-   
-}
-
-//
+//ADDING ITEMS ANIMATION
 @mixin checkanimation{
     transform:translateX(200%);
-     transition: all 0.1s linear;
+     transition: transform 0.5s ease-in-out;
 
     .fa-regular{
-        transition:transform 0.3s linear;
-        transform: rotate(0turn);
+        transition:transform 0.6s linear;
+        transform: rotate(4deg);
         color: white;
         font-weight: bold;
         font-size: 20px;
@@ -573,30 +483,131 @@
 }
 
 
-//
+//MENU ANIMATION
 
-@mixin slide-in1{
-            -webkit-animation:slide-in1 3s ease-in-out 3s 0 forwards;
-                    animation:slide-in1 3s ease-in-out 3s 0 forwards;
-   
-    @-webkit-keyframes slide-in1{
-        from{
-            transform: translatez(-1400px);
-        }
-        to{
-            transform: translatez(0);
-        }
+//items1
+@mixin slide-in{
+  -webkit-animation: slide-in 2s ease-in-out  forwards ;
+          animation: slide-in  2s ease-in-out forwards ;
+
+   @-webkit-keyframes slide-in{
+    0%{
+        opacity: 0;
+        transform: translateY(60%);
     }
-   
-    @keyframes slide-in1{
-        from{
-            transform: translatez(-1400px);
-        }
-        to{
-            transform: translatez(0);
-        }
+
+    50%{
+        opacity: 0.5;
     }
+    100%{
+        opacity:1;
+        transform: translateY(0%);
+        
+    }
+   }
+
+   @keyframes slide-in{
+    0%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0%);
+        
+    }
+   }
 }
+
+//items2
+@mixin slide-in2{
+    -webkit-animation: slide-in2 2s ease-in-out forwards ;
+            animation: slide-in2 2s ease-in-out forwards ;
+
+     @-webkit-keyframes slide-in2{
+      0%{
+          opacity: 0;
+          transform: translateY(50%);
+      }
+        50%{
+            opacity: 0,5;
+        }
+
+      100%{
+          opacity:1;
+          transform: translateY(0%);
+          
+      }
+     }
+  
+     @keyframes slide-in2{
+      0%{
+          opacity: 0;
+          transform: translateY(60%);
+        }
+
+      50%{
+            opacity: 0;
+        }
+      100%{
+          opacity:1;
+          transform: translateY(0%);
+          
+      }
+     }
+  }
+  
+
+  //items3
+  @mixin slide-in3{
+    -webkit-animation: slide-in3 3s ease-in-out  forwards;
+            animation: slide-in3 3s  ease-in-out forwards ;
+
+  
+     @-webkit-keyframes slide-in3{
+      0%{
+          opacity: 0;
+          transform: translateY(10%);
+      }
+      50%{
+         opacity: 0;
+        }
+      100%{
+          opacity:1;
+          transform: translateY(0%);
+          
+      }
+     }
+     @keyframes slide-in3{
+      0%{
+          opacity: 0;
+          transform: translateY(70%);
+        
+        }
+      50%{
+            opacity: 0;
+        }
+      100%{
+          opacity:1;
+          transform: translateY(0%);
+          
+      }
+     }
+  }
+  
+
+
+
+
+
+
+
+
+
 
 //FILLING HEART ANIMATION
 @mixin filling{
@@ -610,7 +621,7 @@
             transform: translateY(-80%) rotate(0deg);
         }
         100%{
-            transform:translateY(-180%) rotate(460deg);
+            transform:translateY(-180%) rotate(0deg);
         }
     } 
   
@@ -619,7 +630,7 @@
             transform: translateY(-80%) rotate(0deg);
         }
         100%{
-            transform:translateY(-180%) rotate(460deg);
+            transform:translateY(-180%) rotate(560deg);
         }
     }
  }
