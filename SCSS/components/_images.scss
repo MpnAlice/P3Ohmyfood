@@ -2,21 +2,17 @@
 @use "../abstracts/mixins"as m;
 .image2{
   @include m.images-container;
-   background-image:url(map-get(v.$images-menu, 1));
    @include m.images;
 }
 .image3{
     @include m.images-container;
-    background-image:url(map-get(v.$images-menu, 2));
     @include m.images;
 }
 .image4{
     @include m.images-container;
-    background-image:url(map-get(v.$images-menu, 3));
     @include m.images;
 }
 .image5{
     @include m.images-container;
-    background-image:url(map-get(v.$images-menu, 4));
     @include m.images;
 }
