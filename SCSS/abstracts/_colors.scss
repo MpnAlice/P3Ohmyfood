@@ -13,7 +13,8 @@ $colors:(
 //gradients for animations and buttons
 $gradients:(
  "btn-gradient":linear-gradient(0deg,v.$primary-clr,v.$secondary-clr),
-  "heart": linear-gradient(to top, map-get($colors, primary),map-get($colors, secondary)),
+ "hover-btn-gradient":linear-gradient(0deg,lighten(v.$primary-clr,6%), lighten(v.$secondary-clr,6%)),
+  "heart":linear-gradient(to top, map-get($colors, primary),map-get($colors, secondary)),
 );
 
 $backgrounds:(
