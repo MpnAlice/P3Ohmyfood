@@ -98,6 +98,7 @@
   border-radius: 50px 50px 0 0;
   background-color: lighten(v.$neutral-grey, 10%);
   margin-top: -45px;
+  position: relative;
   @include m.basic-width;
   padding: 10px;
   @include m.tablet{

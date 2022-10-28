@@ -889,6 +889,7 @@ footer .footer__links__item__text {
   border-radius: 50px 50px 0 0;
   background-color: #f7f7f7;
   margin-top: -45px;
+  position: relative;
   width: 100%;
   padding: 10px;
 }
@@ -994,7 +995,6 @@ footer .footer__links__item__text {
 
 .image2 {
   display: block;
-  background-image: url("images/restaurants/1.jpg");
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -1002,7 +1002,6 @@ footer .footer__links__item__text {
 
 .image3 {
   display: block;
-  background-image: url("images/restaurants/2.jpg");
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -1010,7 +1009,6 @@ footer .footer__links__item__text {
 
 .image4 {
   display: block;
-  background-image: url("images/restaurants/3.jpg");
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -1018,7 +1016,6 @@ footer .footer__links__item__text {
 
 .image5 {
   display: block;
-  background-image: url("images/restaurants/4.jpg");
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -1082,7 +1079,6 @@ footer .footer__links__item__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(/images/restaurants/1.jpg);
     background-size: cover;
   }
 }
@@ -1092,7 +1088,7 @@ footer .footer__links__item__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(/images/restaurants/2.jpg);
+    background-image: url(images/restaurants/1.jpg);
     background-size: cover;
   }
 }
@@ -1102,7 +1098,7 @@ footer .footer__links__item__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(/images/restaurants/3.jpg);
+    background-image: url(images/restaurants/3.jpg);
     background-size: cover;
   }
 }
@@ -1112,7 +1108,7 @@ footer .footer__links__item__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(/images/restaurants/4.jpg);
+    background-image: url(images/restaurants/4.jpg);
     background-size: cover;
   }
 }/*# sourceMappingURL=style.css.map */
