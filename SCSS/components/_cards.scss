@@ -94,11 +94,13 @@
 
   
 .menu__card{
+    overflow: hidden;
   text-align: left;
-  border-radius: 50px 50px 0 0;
+  border-radius: 60px 60px 0 0;
   background-color: lighten(v.$neutral-grey, 10%);
   margin-top: -45px;
   position: relative;
+  border: 2px solid;
   @include m.basic-width;
   padding: 10px;
   @include m.tablet{
@@ -112,15 +114,12 @@
   }
 
   &-header{
-    display: block;
-    width: 85%;
-    height: 60px;
-    margin: 30px auto;
-    @include m.flexcenter;
-    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    @include m.flexbetween;
     &--name{
-         font-size:25px;
-         padding-right: 10px;
+         font-size:2em;
 
     }  
    
@@ -128,6 +127,7 @@
 &-main1,
 &-main2,
 &-main3{
+    padding: 10px;
  position: relative;
     margin-bottom: 30px;
     width: auto;
@@ -155,7 +155,6 @@
             @include m.columncenter;
             @include m.basic-width;
             gap:15px;
-            padding: 10px;
             &--dish{
 
                 @include m.tablet{
@@ -184,7 +183,7 @@
                         width: 80px;
                         transform: translate(9%);
                         &>.fa-regular{
-                            transform: rotate(1turn);
+                            transform: rotate(2turn);
                          }
                      }
                     
@@ -201,6 +200,9 @@
                     width: 10px;
                     margin-bottom: -30px;
                     padding: 20px;
+                    @include m.desktop{
+                        color: red;
+                    }
                 }
             }
             
