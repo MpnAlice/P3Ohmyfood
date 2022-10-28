@@ -597,31 +597,34 @@
         }
     }
 }
-//
+
+//FILLING HEART ANIMATION
 @mixin filling{
-    -webkit-animation:spin 0.3s  linear ;
-            animation:spin 0.3s  linear ;
+    -webkit-animation:spin 3s  ease-out ;
+            animation:spin 3s  ease-out  ;
             -webkit-animation-fill-mode: forwards;
                     animation-fill-mode: forwards; 
     
     @-webkit-keyframes spin {
         0%{
-            transform: translateY(-40%) rotate(0deg);
+            transform: translateY(-80%) rotate(0deg);
         }
         100%{
-            transform:translateY(-160%) rotate(560deg);
+            transform:translateY(-180%) rotate(460deg);
         }
     } 
   
     @keyframes spin {
         0%{
-            transform: translateY(-40%) rotate(0deg);
+            transform: translateY(-80%) rotate(0deg);
         }
         100%{
-            transform:translateY(-160%) rotate(560deg);
+            transform:translateY(-180%) rotate(460deg);
         }
     }
  }
+
+ //
 //
 @mixin entertablet{
     -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
