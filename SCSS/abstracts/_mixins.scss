@@ -332,7 +332,10 @@
      background-image: map-get(c.$gradients , btn-gradient);
       border-radius: v.$xl-border-radius;
       box-shadow: v.$shadow-out;
-   //ADD HOVER
+    &:hover{
+        background-image: map-get(c.$gradients , hover-btn-gradient);
+    }
+   
 }
 
 //restaurant
