@@ -1,18 +1,6 @@
 @use "../abstracts/variables"as v;
 @use "../abstracts/mixins"as m;
-.image2{
+.menu__image{
   @include m.images-container;
    @include m.images;
-}
-.image3{
-    @include m.images-container;
-    @include m.images;
-}
-.image4{
-    @include m.images-container;
-    @include m.images;
-}
-.image5{
-    @include m.images-container;
-    @include m.images;
 }

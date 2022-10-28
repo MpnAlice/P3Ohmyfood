@@ -80,7 +80,6 @@
 
 //LAYOUT MIXINS
 @mixin images-container{
-    display: block;
 }
 
 //header
@@ -208,7 +207,6 @@
    
 //
 @mixin process{
-    border: 2px solid;
     @include basic-width;
     margin-top: v.$l-margin;
     padding:v.$l-padding;
@@ -263,7 +261,7 @@
             }
 
             @include tablet
-            { width: 200px;
+            { width: 250px;
              height: 50px;
              font-size: small;
              text-align: center;
@@ -284,7 +282,12 @@
                 margin-bottom: 0;
                 @include desktop{
                     font-size: smaller;
+                    padding: 10px;
                     }
+
+                @include  tablet{
+                        font-size: smaller;
+                        }
             }
           
     }

@@ -1,7 +1,17 @@
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
 .process{
  @include m.process;
+&__title{
+    @include m.tablet{
+
+      
+    }
 }
+    
+}
+
+
     
 
     

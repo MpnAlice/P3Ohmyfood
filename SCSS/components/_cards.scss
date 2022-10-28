@@ -17,7 +17,7 @@
     }
     
     @include m.desktop{ 
-        width: 450px;
+        width: 400px;
         max-width: 100%;
         
     }  
@@ -86,133 +86,146 @@
     top:1rem;
     right: 1rem;
     font-weight: bold;}
-  }
+}
 
   
 .menu__card{
-    overflow: hidden;
+ overflow: hidden;
   text-align: left;
   border-radius: 60px 60px 0 0;
   background-color: lighten(v.$neutral-grey, 10%);
   margin-top: -45px;
   position: relative;
+  //tablet 
+  @include m.tablet{
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    height: 500px;
+    padding: 10px;
+  }
+  
   @include m.basic-width;
   padding: 10px;
-  @include m.tablet{
-
-    border: 2px solid;
-    width: 80%;
-    border-radius:0;
-    margin:0 auto;
-    margin-top: -70px;
-    padding:20px;
-  }
-
+  //menu header 
   &-header{
     width: 90%;
     margin: 0 auto;
     padding-top: 20px;
+    
+    //tablet 
+  @include m.tablet{
+    font-size: 10px;
+    padding-top: 5px;
+    width:100%;
+    margin: 10px auto;
+    position: absolute;
+  @include m.flexcenter
+  
+  }
+
+
     @include m.flexbetween;
     &--name{
-         font-size:2em;
-
-    }  
-   
-}
-&-main1,
-&-main2,
-&-main3{
-    padding: 10px;
- position: relative;
-    margin-bottom: 30px;
-    width: auto;
-    height: auto;
-    @include m.tablet{
-
-        
+        font-size: 2em;
     }
 
-   
+  }
+
+  //main cards
+  &-main1,
+  &-main2,
+  &-main3{
+    padding:10px;
+    width: auto;
+    @include m.tablet{
+        width: 100%;
+       margin-top: 100px;
+    }
+
+    //titles
     &--title{
-            text-transform: uppercase;
-            width:v.$l-width;
-            border-bottom:3px solid v.$tertiary-clr;
-            margin-bottom: v.$m-margin;
-            @include m.tablet{
-                height:50%;
-                width: 60%;
-                display: flex;
-                margin-right: 50px;
-                
-            }
-        }
-        &--items{
-            @include m.columncenter;
+        text-transform: uppercase;
+        width:v.$l-width;
+        border-bottom:3px solid v.$tertiary-clr;
+        margin-bottom: v.$m-margin;
+
+      }
+
+    &--items{
+        @include m.columncenter;
+        @include m.basic-width;
+        gap:15px;
+        &--dish{
+            background-color:v.$neutral-white;
+            cursor: pointer;
+            position:relative;
+            @include m.flexbetween;
             @include m.basic-width;
-            gap:15px;
-            &--dish{
-                @include m.tablet{
-                   height: 60px;
-                   gap: 2px;
-                    
-                }
-                @include m.desktop{
-                   background-color: yellow;
-                   width: 80%;
-                     
-                }
-                
-               
-            
-                background-color:v.$neutral-white;
-                cursor: pointer;
-                position:relative;
-                @include m.flexbetween;
-                @include m.basic-width;
-                height:v.$l-height;
-                border-radius: v.$s-border-radius;
-                overflow: hidden;
-                box-shadow: v.$shadow-out;
-                width: 100%;
-                &:hover{
-                     & >.menu__card-main1--items--dish--name{
-                        width:55%;
-                     }
-                     & >.menu__card-main1--items--dish--price{
-                        width:40%;
-                       
-                       
-                     }
-                     & >.menu__card-main1--items--dish--add{
+            height:v.$l-height;
+            border-radius: v.$s-border-radius;
+            overflow: hidden;
+            box-shadow: v.$shadow-out;
+            width: 100%;
+
+
+           //hover effects
+            &:hover{
+                & >.menu__card-main1--items--dish--name{
+                    width:55%;
+                    }
+    
+                    & >.menu__card-main1--items--dish--price{
+                     width:40%;
+                 
+                    }
+
+                    & >.menu__card-main1--items--dish--add{
                         width: 80px;
                         transform: translate(9%);
                         &>.fa-regular{
-                            transform: rotate(2turn);
-                         }
+                        transform: rotate(2turn);
+                        }
                      }
-                    
-                }
-                &--name{
-                    width: 100%;
-                    text-overflow: ellipsis;
-                    white-space:nowrap;
-                    display: inline-block;
-                    overflow: hidden;
-                    margin: 15px 0 15px 15px;
-                    line-height: 25px;
-                }
-                &--price{
-                    margin-bottom: -30px;
-                   margin-right: -40px;
-                   //breakpoints
-                }
+        
+    
             }
-            
-           
+            //name
+            &--name{
+                width: 100%;
+                text-overflow: ellipsis;
+                white-space:nowrap;
+                display: inline-block;
+                overflow: hidden;
+                margin: 15px 0 15px 15px;
+                line-height: 25px;
+
+
+            }
+            &--price{
+                margin-bottom: -30px;
+                margin-right: -40px; 
+
+            }
+        
 
         }
-}
 
-}
+    }
+  }
+  
+
+} 
+
+  
+
+    
+
+
+
+
+
+
+
 
   

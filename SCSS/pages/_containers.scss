@@ -1,14 +1,6 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
-.container1{
-    @include m.tablet{
-        display: flex;
-        flex-basis: 100%;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-    }
-}
+
 
 .hero-process-container{
     @include m.tablet{
@@ -39,16 +31,18 @@
   
 }
 .menu__container{
+background-color:lighten(v.$neutral-grey, 10%);
+}
+.container1{
     @include m.tablet
     {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
+        background-size: cover;
+        background-image: url(/images/restaurants/1.jpg);
+      
         
     }
    
-    background-color:lighten(v.$neutral-grey, 10%);
+    
 }
 .container2{
     @include m.tablet
@@ -56,11 +50,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-size: cover;
-      
-        
+       background-color: bisque;
+       background-image: url(/images/restaurants/2.jpg);
+     
     }
-   
+      
     
 }
 .container3{
@@ -69,13 +63,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-image: url(images/restaurants/1.jpg);
+        width: 100%;
+        height: 100%;
         background-size: cover;
+        position: relative;
+        background-image: url(/images/restaurants/3.jpg);
       
         
     }
-      
-    
+   
 }
 .container4{
     @include m.tablet
@@ -83,21 +79,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-image:url(images/restaurants/3.jpg);
         background-size: cover;
-      
-        
-    }
-   
-}
-.container5{
-    @include m.tablet
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-image:url(images/restaurants/4.jpg);
-        background-size: cover;
+        background-image: url(/images/restaurants/4.jpg);
       
         
     }
