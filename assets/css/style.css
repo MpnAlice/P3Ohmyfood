@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&family=Shrikhand&display=swap");
 p,
 h1,
@@ -95,6 +94,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  min-width: 320px;
 }
 
 img {
@@ -994,7 +994,7 @@ footer .footer__links__item__text {
 
 .image2 {
   display: block;
-  background-image: url("/assets/images/restaurants/La_palette_du_goût.jpg");
+  background-image: url("images/restaurants/1.jpg");
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -1002,7 +1002,7 @@ footer .footer__links__item__text {
 
 .image3 {
   display: block;
-  background-image: url("/assets/images/restaurants/La_note_enchantée.jpg");
+  background-image: url("images/restaurants/2.jpg");
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -1010,7 +1010,7 @@ footer .footer__links__item__text {
 
 .image4 {
   display: block;
-  background-image: url("/assets/images/restaurants/A_la_française.jpg");
+  background-image: url("images/restaurants/3.jpg");
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -1018,7 +1018,7 @@ footer .footer__links__item__text {
 
 .image5 {
   display: block;
-  background-image: url("/assets/images/restaurants/Le_délice_des_sens.jpg");
+  background-image: url("images/restaurants/4.jpg");
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -1082,7 +1082,7 @@ footer .footer__links__item__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("/assets/images/restaurants/La_palette_du_goût.jpg");
+    background-image: url(/images/restaurants/1.jpg);
     background-size: cover;
   }
 }
@@ -1092,7 +1092,7 @@ footer .footer__links__item__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("/assets/images/restaurants/La_note_enchantée.jpg");
+    background-image: url(/images/restaurants/2.jpg);
     background-size: cover;
   }
 }
@@ -1102,7 +1102,7 @@ footer .footer__links__item__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("/assets/images/restaurants/A_la_française.jpg");
+    background-image: url(/images/restaurants/3.jpg);
     background-size: cover;
   }
 }
@@ -1112,7 +1112,7 @@ footer .footer__links__item__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("/assets/images/restaurants/Le_délice_des_sens.jpg");
+    background-image: url(/images/restaurants/4.jpg);
     background-size: cover;
   }
 }/*# sourceMappingURL=style.css.map */
