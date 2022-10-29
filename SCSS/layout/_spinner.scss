@@ -1,4 +1,40 @@
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
 .loading-spinner{
   @include m.spinner;
+  text-align: CENTER;
+  .l1{
+    color:v.$tertiary-clr;
+    @include m.spinnerletter;
+    margin-bottom: -235%;
+    margin-left: -50%;
+    @include m.slide-in
+    
+    
+  }
+  .l2{
+    color:v.$primary-clr;
+    @include m.spinnerletter;
+    right:700px;
+    @include m.flexcenter;
+    margin-bottom: -191%;
+    margin-left: -15%;
+    @include m.slide-in
+
+    
+    
+  }
+  .l3{
+    color:v.$secondary-clr;
+    @include m.spinnerletter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -148%;
+    margin-right: -33%;
+    @include m.slide-in;
+    
+
+  }
 }

@@ -3,9 +3,7 @@
 @use "../abstracts/mixins" as m;
 //spinner
 .loading-spinner{
- @include m.fade-out;
- display: none;
-  
+    @include m.fade-out;
     &::after{
       @include m.rotate;
         
