@@ -133,18 +133,18 @@ img {
 }
 @-webkit-keyframes spinning {
   from {
-    rotate: 0turn;
+    rotate: 45deg;
   }
   to {
-    rotate: 2turn;
+    rotate: 360deg;
   }
 }
 @keyframes spinning {
   from {
-    rotate: 1turn;
+    rotate: 45deg;
   }
   to {
-    rotate: 2turn;
+    rotate: 360deg;
   }
 }
 
@@ -447,7 +447,7 @@ footer .footer__links__item__text {
 @media screen and (min-width: 900px) {
   .restaurant__cards {
     display: flex;
-    flex-flow: columnwrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
   }
@@ -645,7 +645,7 @@ footer .footer__links__item__text {
 }
 .loading-spinner .l1 {
   color: #99E2D0;
-  font-weight: light;
+  font-weight: bold;
   font-size: 40px;
   font-family: "Shrikhand", cursive;
   margin-bottom: -235%;
@@ -686,7 +686,7 @@ footer .footer__links__item__text {
 }
 .loading-spinner .l2 {
   color: #9356DC;
-  font-weight: light;
+  font-weight: bold;
   font-size: 40px;
   font-family: "Shrikhand", cursive;
   right: 700px;
@@ -732,7 +732,7 @@ footer .footer__links__item__text {
 }
 .loading-spinner .l3 {
   color: #FF79DA;
-  font-weight: light;
+  font-weight: bold;
   font-size: 40px;
   font-family: "Shrikhand", cursive;
   display: flex;
