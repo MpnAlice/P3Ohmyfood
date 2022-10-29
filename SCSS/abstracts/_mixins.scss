@@ -69,10 +69,11 @@
 }
 //mediaqueries
 @mixin desktop{
-    @media (min-width:993px){@content};
+    @media screen and (min-width:map-get(v.$breakpoints, lg)){@content};
 }
+
 @mixin tablet{
-    @media screen and (min-width:768px){@content}; 
+    @media screen and (min-width:map-get(v.$breakpoints, md)){@content}; 
 }
 
 
@@ -199,8 +200,7 @@
 @mixin small-icon-grey{
     width: 10%;
     padding-left: 40px;
-    height: 5px;
-    color:map-get(c.$colors, home-medium-dark);
+    color: darken(map-get(c.$colors, home-medium),40%);
     font-size:19px;
    
 }
@@ -226,6 +226,9 @@
         align-items: center;
         justify-content: space-between;
         padding: 0;
+    }
+    @include desktop{
+        width: 90%;
     }
     
     &__steps{
@@ -256,7 +259,7 @@
 
             @include desktop{
                 height: 50px;
-                width: 600px;
+                width: 650px;
                 font-size:medium;
             }
 
