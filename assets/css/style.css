@@ -531,6 +531,7 @@ footer .footer__links__item__text {
 }
 .hero__btn button:hover {
   background-image: linear-gradient(0deg, #a36fe1, #ff98e2);
+  box-shadow: 0px 10px 13px -7px #8e8f8f;
 }
 
 .process {
@@ -691,6 +692,7 @@ footer .footer__links__item__text {
 }
 .order__btn > *:hover {
   background-image: linear-gradient(0deg, #a36fe1, #ff98e2);
+  box-shadow: 0px 10px 13px -7px #8e8f8f;
 }
 
 .restaurant__cards__card__link--body--heart {
