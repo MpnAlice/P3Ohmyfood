@@ -118,10 +118,10 @@
   @include m.tablet{
     font-size: 10px;
     padding-top: 5px;
-    width:100%;
+    width:90%;
     margin: 10px auto;
     position: absolute;
-  @include m.flexcenter
+    @include m.flexbetween;
   
   }
 
@@ -177,11 +177,6 @@
 
            //hover effects
             &:hover{
-                & >.menu__card-main1--items--dish--price{
-
-                    }
-
-
                     & >.menu__card-main1--items--dish--add{
                         width: 80px;
                         transform: translatex(0%);
