@@ -962,13 +962,13 @@ footer .footer__links__item__text {
   .menu__card-header {
     font-size: 10px;
     padding-top: 5px;
-    width: 100%;
+    width: 90%;
     margin: 10px auto;
     position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 .menu__card-header--name {
