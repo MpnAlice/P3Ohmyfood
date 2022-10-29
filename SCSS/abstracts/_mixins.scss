@@ -469,8 +469,7 @@
 //ADDING ITEMS ANIMATION
 @mixin checkanimation{
     transform:translateX(200%);
-     transition: transform 0.5s ease-out;
-
+    transition: all 1s;
     .fa-regular{
         transition:transform 0.6s linear;
         transform: rotate(4deg);
@@ -483,17 +482,38 @@
        
     }
 }
+ 
 //
 @mixin translating-box{
     background-color: v.$tertiary-clr;
-    width:60px;
+    margin-left: 9px;
+    margin-right: -10px;
+    width:10px;
     height:100%;
     outline:none;
     border: none;
-    border-radius: 0 16px 16px 0;
     display: inline-block;
     @include flexcenter;
+    transform: translateX(100%);
+    -webkit-animation: slide;
+            animation: slide;
   
+}
+@-webkit-keyframes slide{
+    from{
+        transform: translatex(200%);
+    }
+    to{
+        transform:translateY(100%)
+    }
+}
+@keyframes slide{
+    from{
+        transform: translatex(200%);
+    }
+    to{
+        transform:translateY(150%)
+    }
 }
 
 //MENU ANIMATION
